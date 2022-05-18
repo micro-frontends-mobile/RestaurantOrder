@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class OrderViewModel: ObservableObject {
-  @Published private var restaurant: Restaurant?
+  @Published var restaurant: Restaurant?
   @Published var orderItems: [OrderItem] = []
   private var cancellable = Set<AnyCancellable>()
 
