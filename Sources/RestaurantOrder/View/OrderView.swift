@@ -27,6 +27,7 @@ public struct OrderView: View {
       }
 
       orderButton
+        .background(backgroundColor)
     }
     .padding()
     .onAppear {
