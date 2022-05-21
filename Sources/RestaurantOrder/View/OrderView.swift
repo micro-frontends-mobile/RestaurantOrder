@@ -7,13 +7,17 @@
 
 import SwiftUI
 
-struct OrderView: View {
+public struct OrderView: View {
   @StateObject private var viewModel: OrderViewModel = OrderViewModel()
   @State private var showingAlert: Bool = false
   var url: URL
   let backgroundColor = Color(uiColor: UIColor(red: 243/255, green: 243/255, blue: 222/255, alpha: 1.0))
 
-  var body: some View {
+  public init(url: URL) {
+    self.url = url
+  }
+
+  public var body: some View {
     ZStack(alignment: .bottom) {
       ScrollView {
         restaurantInfo

@@ -11,6 +11,7 @@
 		B579F4542838DBC400B54D4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579F4532838DBC400B54D4A /* ContentView.swift */; };
 		B579F4562838DBC500B54D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B579F4552838DBC500B54D4A /* Assets.xcassets */; };
 		B579F4592838DBC500B54D4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B579F4582838DBC500B54D4A /* Preview Assets.xcassets */; };
+		B579F4632838DC0800B54D4A /* RestaurantOrder in Frameworks */ = {isa = PBXBuildFile; productRef = B579F4622838DC0800B54D4A /* RestaurantOrder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B579F4532838DBC400B54D4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B579F4552838DBC500B54D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B579F4582838DBC500B54D4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B579F4602838DBFF00B54D4A /* RestaurantOrder */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RestaurantOrder; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B579F4632838DC0800B54D4A /* RestaurantOrder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +38,10 @@
 		B579F4452838DBC400B54D4A = {
 			isa = PBXGroup;
 			children = (
+				B579F45F2838DBFF00B54D4A /* Packages */,
 				B579F4502838DBC400B54D4A /* RestaurantOrderExample */,
 				B579F44F2838DBC400B54D4A /* Products */,
+				B579F4612838DC0800B54D4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B579F45F2838DBFF00B54D4A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B579F4602838DBFF00B54D4A /* RestaurantOrder */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		B579F4612838DC0800B54D4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = RestaurantOrderExample;
+			packageProductDependencies = (
+				B579F4622838DC0800B54D4A /* RestaurantOrder */,
+			);
 			productName = RestaurantOrderExample;
 			productReference = B579F44E2838DBC400B54D4A /* RestaurantOrderExample.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +362,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B579F4622838DC0800B54D4A /* RestaurantOrder */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RestaurantOrder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B579F4462838DBC400B54D4A /* Project object */;
 }

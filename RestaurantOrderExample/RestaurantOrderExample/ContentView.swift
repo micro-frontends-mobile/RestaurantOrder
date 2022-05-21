@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import RestaurantOrder
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        OrderView(url: URL(string: "https://content.demo.microfrontends.com/restaurants/1.json")!)
     }
 }
 
