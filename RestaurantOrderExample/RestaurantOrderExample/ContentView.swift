@@ -10,7 +10,7 @@ import RestaurantOrder
 
 struct ContentView: View {
     var body: some View {
-        OrderView(url: URL(string: "https://content.demo.microfrontends.com/restaurants/1.json")!)
+        RandomOrderView()
     }
 }
 

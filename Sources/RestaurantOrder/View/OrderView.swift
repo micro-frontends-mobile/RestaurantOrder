@@ -20,8 +20,12 @@ public struct OrderView: View {
   public var body: some View {
     ZStack(alignment: .bottom) {
       ScrollView {
-        restaurantInfo
-        orderMenu
+        if !viewModel.isLoading {
+          restaurantInfo
+          orderMenu
+        } else {
+          ProgressView()
+        }
 
         Spacer(minLength: 100)
       }

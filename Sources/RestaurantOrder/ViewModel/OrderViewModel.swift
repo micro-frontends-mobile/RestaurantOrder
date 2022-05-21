@@ -11,6 +11,7 @@ import Combine
 class OrderViewModel: ObservableObject {
   @Published var restaurant: Restaurant?
   @Published var orderItems: [OrderItem] = []
+  @Published var isLoading: Bool = true
   private var cancellable = Set<AnyCancellable>()
 
   func loadData(url: URL) {
@@ -24,6 +25,7 @@ class OrderViewModel: ObservableObject {
       } receiveValue: { restaurant in
         self.restaurant = restaurant
         self.orderItems = restaurant.menu.map { OrderItem(price: $0.price, item: $0.item) }
+        self.isLoading = false
       }
       .store(in: &cancellable)
   }
