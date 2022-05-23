@@ -6,15 +6,16 @@
 //
 
 import SwiftUI
+import Env
 
 public struct OrderView: View {
   @StateObject private var viewModel: OrderViewModel = OrderViewModel()
   @State private var showingAlert: Bool = false
   var url: URL
-  let backgroundColor = Color(uiColor: UIColor(red: 243/255, green: 243/255, blue: 222/255, alpha: 1.0))
 
   public init(url: URL) {
     self.url = url
+    _ = Env.initialize()
   }
 
   public var body: some View {
@@ -31,13 +32,13 @@ public struct OrderView: View {
       }
 
       orderButton
-        .background(backgroundColor)
+        .background(Env.shared.configuration.backgroundColor)
     }
     .padding()
     .onAppear {
       viewModel.loadData(url: url)
     }
-    .background(backgroundColor)
+    .background(Env.shared.configuration.backgroundColor)
   }
 
   private var restaurantInfo: some View {
@@ -92,6 +93,7 @@ public struct OrderView: View {
       } label: {
         Text("Order now")
           .padding(12)
+          .tint(.primary)
           .background(Color(uiColor: UIColor(red: 231/255, green: 150/255, blue: 82/255, alpha: 1.0)))
       }
       .alert(isPresented: $showingAlert) {
