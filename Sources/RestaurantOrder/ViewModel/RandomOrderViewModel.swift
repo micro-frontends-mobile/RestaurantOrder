@@ -8,6 +8,7 @@
 
 import Foundation
 import Combine
+import Env
 
 class RandomOrderViewModel: ObservableObject {
   @Published var url: URL?
@@ -29,7 +30,7 @@ class RandomOrderViewModel: ObservableObject {
       .store(in: &cancellable)
   }
 
-  private let host = "https://content.demo.microfrontends.com"
+  private let host = Env.initialize().configuration.host
   private var restaurantListUrl: URL {
     URL(string: "\(host)/restaurants.json")!
   }

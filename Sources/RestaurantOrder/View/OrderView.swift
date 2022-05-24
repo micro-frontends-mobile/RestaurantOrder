@@ -63,7 +63,6 @@ public struct OrderView: View {
       HStack {
         Text("\(viewModel.description)")
           .font(.title2)
-          .foregroundColor(.gray)
         Spacer()
       }
     }

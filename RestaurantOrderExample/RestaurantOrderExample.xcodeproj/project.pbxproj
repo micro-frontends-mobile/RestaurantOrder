@@ -11,7 +11,7 @@
 		B579F4542838DBC400B54D4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579F4532838DBC400B54D4A /* ContentView.swift */; };
 		B579F4562838DBC500B54D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B579F4552838DBC500B54D4A /* Assets.xcassets */; };
 		B579F4592838DBC500B54D4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B579F4582838DBC500B54D4A /* Preview Assets.xcassets */; };
-		B579F4632838DC0800B54D4A /* RestaurantOrder in Frameworks */ = {isa = PBXBuildFile; productRef = B579F4622838DC0800B54D4A /* RestaurantOrder */; };
+		B58F7611283D4B8900D934FA /* RestaurantOrder in Frameworks */ = {isa = PBXBuildFile; productRef = B58F7610283D4B8900D934FA /* RestaurantOrder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		B579F4532838DBC400B54D4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B579F4552838DBC500B54D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B579F4582838DBC500B54D4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B579F4602838DBFF00B54D4A /* RestaurantOrder */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RestaurantOrder; path = ..; sourceTree = "<group>"; };
+		B58F760F283D4B7D00D934FA /* RestaurantOrder */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RestaurantOrder; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B579F4632838DC0800B54D4A /* RestaurantOrder in Frameworks */,
+				B58F7611283D4B8900D934FA /* RestaurantOrder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +75,7 @@
 		B579F45F2838DBFF00B54D4A /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				B579F4602838DBFF00B54D4A /* RestaurantOrder */,
+				B58F760F283D4B7D00D934FA /* RestaurantOrder */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 			);
 			name = RestaurantOrderExample;
 			packageProductDependencies = (
-				B579F4622838DC0800B54D4A /* RestaurantOrder */,
+				B58F7610283D4B8900D934FA /* RestaurantOrder */,
 			);
 			productName = RestaurantOrderExample;
 			productReference = B579F44E2838DBC400B54D4A /* RestaurantOrderExample.app */;
@@ -134,6 +134,8 @@
 				Base,
 			);
 			mainGroup = B579F4452838DBC400B54D4A;
+			packageReferences = (
+			);
 			productRefGroup = B579F44F2838DBC400B54D4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -364,7 +366,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B579F4622838DC0800B54D4A /* RestaurantOrder */ = {
+		B58F7610283D4B8900D934FA /* RestaurantOrder */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RestaurantOrder;
 		};
